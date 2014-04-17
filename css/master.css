@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0;}
+
+/*
+FONTS
+  font-family: "tablet-gothic-condensed",sans-serif;
+*/
+
+body, input {font-size: 62.5%; line-height: 1.6; font-family: "tablet-gothic-condensed",sans-serif; font-weight: 300;}
+
+#wrap {width: 64em; margin: 0 auto; text-align: center;}
+
+#logo,
+#logo a {width: 326px; height: 68px;}
+#logo {margin: 80px auto 70px auto;}
+#logo a {display: block; background: url('../images/logo.png') no-repeat; text-indent: -9999px;}
+
+h4 {font-size: 32px; text-transform: uppercase; color: #6D91B2; font-weight: 300; letter-spacing: 1px; margin: 0 0 20px 0;}
+h5 {font-size: 24px; text-transform: uppercase; color: #6D91B2; font-weight: 300; letter-spacing: 1px; margin: 70px 0 0 0;}
+p.contact {font-size: 21px; letter-spacing: 1px; font-weight: 300;}
+p.contact a {color: #73C5E1;}
+.footer {margin: 70px 0 20px 0; color: #979797; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;}
+
+.form input {
+  border: 1px solid #D8D8D8; font-size: 24px; text-transform: uppercase; padding: 0.1em 0.5em 0.2em 0.5em;
+  font-weight: 300;
+}
+.form input[type="text"],
+.form input[type="email"] {width: 11.75em;}
+.form input[type="submit"] {
+  border-color: #B5CDE3; background: #B5CDE3; color: #fff;
+  padding-left: 0.75em; padding-right: 0.75em; margin-left: 0.5em;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  #logo a {background-image: url('../images/logo@2x.png'); background-size: 326px 68px;}
+}
