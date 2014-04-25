@@ -20,7 +20,8 @@ body, input {
 #logo a {display: block; background: url('../images/logo2-full.png') no-repeat; text-indent: -9999px;}
 
 .colophon {font-size: 3.5em; line-height: 1.4; color: #707070; font-weight: 500;}
-h4 {font-size: 4.75em; color: #707070; font-weight: 500; margin: 0.2em 0 1.25em 0;}
+h4 {font-size: 4.67em; color: #707070; font-weight: 500; margin: 0.2em 0 1.25em 0;}
+h4 br {display: none;}
 
 .contact {font-size: 3em; color: #fff; font-weight: 300; margin: 5em 0 0 0; text-shadow: 0 0 20px #000;}
 .contact a {color: #fff; text-decoration: none; margin: 0 0.25em;}
@@ -57,20 +58,25 @@ h4 {font-size: 4.75em; color: #707070; font-weight: 500; margin: 0.2em 0 1.25em 
 }
 
 @media (max-width: 980px) {
-  #wrap {width: 90em;}
-  .colophon {font-size: 4.25em;}
-  h4 {font-size: 5.25em;}
-  .colophon, h4 {color: #666;}
+  #wrap {width: 52em;}
+  #logo {margin-bottom: 1em;}
+  .colophon {font-size: 2.5em; width: 85%; margin-left: auto; margin-right: auto;}
+  .colophon br {display: none;}
+  h4 {font-size: 4.5em; margin-top: 0.5em; margin-bottom: 0.75em; line-height: 1.25;}
+  h4 strong {font-weight: 700;}
+  h4 br {display: block;}
+  .colophon, h4 {color: #666; font-weight: 600;}
 
+  .form {width: 48em;}
+  .form input[type="text"],
+  .form input[type="email"] {width: 9.75em;}
   .form input {-webkit-appearance: none; border-radius: 0;}
 
-  .contact {font-size: 5em; text-shadow: none; margin-top: 2em;}
+  .contact {font-size: 4.5em; font-weight: 500; margin-top: 2em;}
   .contact span {width: 0; height: 0; overflow: hidden; display: block;}
-  .contact a {margin-bottom: 0.5em; display: inline-block; color: #666;}
-  .contact a:hover,
-  .contact a:active {color: #222;}
+  .contact a {margin-bottom: 0.5em; display: inline-block;}
 
-  .footer {font-size: 3em; color: #888; text-shadow: none; padding-top: 3m;}
+  .footer {font-size: 1.8em; font-weight: 500; padding-top: 3em;}
 
-  html {background: url('../images/concrete.png') repeat top left; background-size: auto;}
+  /*html {background: url('../images/concrete.png') repeat top left; background-size: auto;}*/
 }
